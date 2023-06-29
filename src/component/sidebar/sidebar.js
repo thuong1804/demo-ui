@@ -32,8 +32,6 @@ function Sidebar() {
         {
             img: cargetright
         }
-
-
     ])
 
     const [nameExam] = useState([
@@ -45,7 +43,6 @@ function Sidebar() {
             title: "Ngân hàng đề thi I Test",
             img: cargetright
         }
-
     ])
     const [blockTableElement] = useState([{
         title: "Nguồn",
@@ -63,19 +60,17 @@ function Sidebar() {
         title: "Tổng cộng",
         text: "1600"
     }
-
     ])
+
     const [listmenuBook] = useState([
         {
             img: megazine,
             title: 'Sách Giáo Khoa',
-            title2:'Báo cáo giáo viên',
-            title3:'Báo cáo học viên'
-
+            title2: 'Báo cáo giáo viên',
+            title3: 'Báo cáo học viên'
         },
-       
-
     ])
+
     const [listBook] = useState([
         {
             img: bookimg,
@@ -103,12 +98,12 @@ function Sidebar() {
             use: 16
         },
     ])
+
     function handlerclicj() {
         alert('Click')
     }
+
     return (
-
-
         <div className='admin'>
             <div className='side-bar'>
                 <header>
@@ -131,7 +126,6 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
-
             <div className='head-menu'>
                 <header>
                     <h3 >TỔNG QUAN</h3>
@@ -141,7 +135,6 @@ function Sidebar() {
                         {titles.map((item, index) => (
                             <a key={index} href='' className='menu-content-list' >{item.title}</a>
                         ))}
-
                     </div>
                     <div className='content-blocks'>
                         <div className='content-funct'>
@@ -164,17 +157,14 @@ function Sidebar() {
                                 </div>
                             </div>
                         </div>
-
                         <div className='content-block-grid'>
                             <div className='content-chart'>
                                 <div className='content-chart-title'>
                                     <div>Tỷ trọng tài khoản giáo viên theo nguồn</div>
-
                                 </div>
                                 <div className='img-chart'>
                                     <img src={chart} ></img>
                                 </div>
-
                                 <div className='chart-detail' >
                                     <div className='chart-detail-flex'>
                                         <div className='circle-detail-flex-blue'></div>
@@ -184,29 +174,21 @@ function Sidebar() {
                                         <div className='circle-detail-flex-orange'></div>
                                         <div>DTP</div>
                                     </div>
-
                                 </div>
                             </div>
                             <div className='content-table'>
-
                                 {blockTableElement.map((blocktable, index) => (
-
                                     <div key={index} >
                                         <div >{blocktable.title}</div>
                                         <div >{blocktable.text}</div>
                                     </div>
-
                                 ))}
                             </div>
-
                         </div>
                         <p className='link-detail' >
                             <a href='' >Xem chi tiết </a>
                         </p>
-
-
                     </div>
-
                     <div className='content-grid'>
                         <div className='block-exam-favourite'>
                             <div className='block-grid-detail-exam-favourite'>
@@ -216,7 +198,6 @@ function Sidebar() {
                                         <img src={megazine}></img>
                                         <div>Sách Giáo Khoa</div>
                                     </div>
-
                                     <div >Sách Bổ Trợ</div>
                                     <div >Bài Thi Quốc Tế</div>
                                 </div>
@@ -243,11 +224,8 @@ function Sidebar() {
                                                 </div>
                                             </div>
                                         ))}
-
-
                                     </div>
                                 </div>
-
                                 <div className='btn-paginate' >
                                     {bntPaginate.map((btn, index) => (
                                         <button className='btn-next-page' key={index} >
@@ -258,18 +236,16 @@ function Sidebar() {
                             </div>
                             <div className='block-grid-detail-exam-favourite'>
                                 <h4>Top 10 đề thi được yêu thích trong 30 ngày</h4>
-                                {listmenuBook.map((data,index) => (
-                                    <div className='list-menu-item' >
+                                {listmenuBook.map((data, index) => (
+                                    <div className='list-menu-item' key={index} >
                                         <div className='bground-menu-list'>
                                             <img src={data.img}></img>
                                             <div>{data.title}</div>
                                         </div>
-
                                         <div >{data.title2}</div>
                                         <div >{data.title3}</div>
                                     </div>
                                 ))}
-
                                 <div className='block-list-book-item'>
                                     <div className='info-title'>
                                         <div >
@@ -293,11 +269,8 @@ function Sidebar() {
                                                 </div>
                                             </div>
                                         ))}
-
-
                                     </div>
                                 </div>
-
                                 <div className='btn-paginate' >
                                     {bntPaginate.map((btn, index) => (
                                         <button className='btn-next-page' key={index} >
@@ -313,5 +286,4 @@ function Sidebar() {
         </div>
     )
 }
-
 export default Sidebar;

@@ -3,20 +3,25 @@
     background-color: white;
     border-radius: 15px;
 }
-.block-menu-side-bar{
+
+.block-menu-side-bar {
     padding: 5px 10px;
 }
-.title-side-bar p{
+
+.title-side-bar p {
     font-size: 10px;
 }
+
 .head-menu header h3 {
     margin-left: 20px;
 }
-.menu-sidear-item{
+
+.menu-sidear-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .head-menu {
     width: 100%;
     background-color: white;
@@ -25,7 +30,8 @@
     overflow-y: scroll;
 
 }
-.logo-img{
+
+.logo-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +40,7 @@
     background-color: #ea694d;
     border-radius: 10px;
 }
+
 .title-side-bar {
     display: flex;
     background: antiquewhite;
@@ -49,9 +56,7 @@
 .admin {
     display: flex;
     gap: 10px;
-
     height: inherit;
-
 }
 
 .menu-sidebar {
@@ -66,10 +71,8 @@
 
 .menu-content {
     display: flex;
-
     border-radius: 15px;
     height: 30px;
-
     align-items: center;
     padding-left: 10px;
     padding-top: 10px;
@@ -116,7 +119,6 @@
     gap: 10px
 }
 
-
 .btn-back button {
     height: 27px;
     width: 60px;
@@ -125,7 +127,7 @@
     border: 1px solid white;
 }
 
-.btn-result .btn-item-result{
+.btn-result .btn-item-result {
     height: 27px;
     width: 60px;
     background-color: #f84c26;
@@ -133,13 +135,9 @@
     font-weight: bold;
     font-size: 0.6rem;
     border-radius: 29px;
-   border: 0.5px solid white;
-    /* 
-    
-   
-  
-   */
+    border: 0.5px solid white;
 }
+
 .content-calender-element {
     font-size: 0.6rem;
     border-radius: 5px;
@@ -172,7 +170,6 @@
     gap: 100px;
     padding: 10px 20px;
     font-size: 0.7rem;
-
 }
 
 .content-table div:nth-child(3) {
@@ -338,7 +335,6 @@
 
 .list-exam {
     background-color: white;
-
 }
 
 .block-grid-detail-exam-favourite {
@@ -371,10 +367,12 @@
     align-items: center;
     justify-content: center;
 }
-.btn-back-page > img:first-child{
+
+.btn-back-page>img:first-child {
     width: 20px;
     height: 20px;
 }
+
 .btn-paginate {
     display: flex;
     justify-content: flex-end;
