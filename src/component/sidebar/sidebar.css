@@ -34,7 +34,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .head-menu {
@@ -43,7 +42,6 @@
     border-radius: 15px;
     height: 96vh;
     overflow-y: scroll;
-
 }
 
 .logo-img {
@@ -65,7 +63,6 @@
     color: #f84c26;
     background-color: rgb(247 248 252);
     padding: 5px 10px;
-
 }
 
 .admin {
@@ -121,7 +118,6 @@
 .content {
     background-color: #f7f8fc;
     padding: 0px 10px 5px 10px;
-
 }
 
 .content-funct {
