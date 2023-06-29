@@ -10,6 +10,7 @@ import bookmarkgreen from "../../assets/images/Bookmark_green.svg"
 import bookblue from "../../assets/images/Bookmark_blue.svg"
 import bookwhite from "../../assets/images/Bookmark_white.svg"
 import icmenu from "../../assets/images/icmenu.svg"
+import note from "../../assets/images/note.svg"
 
 function Sidebar() {
 
@@ -36,10 +37,12 @@ function Sidebar() {
 
     const [nameExam] = useState([
         {
+            icon: note,
             title: "Ngân hàng đề thi giáo viên",
             img: cargetright
         },
         {
+            icon: note,
             title: "Ngân hàng đề thi I Test",
             img: cargetright
         }
@@ -119,7 +122,10 @@ function Sidebar() {
                     <div className='menu-sidebar'>
                         {nameExam.map((nameE, index) => (
                             <div className='menu-sidear-item' key={index} >
-                                <a href='https://vi.legacy.reactjs.org/docs/hooks-effect.html' style={{ fontSize: '10px', color: "#757688" }}>{nameE.title} </a>
+                                <div className='icon-text-flex'>
+                                    <img src={nameE.icon}></img>
+                                    <a href='' className='title-menu-link'>{nameE.title} </a>
+                                </div>
                                 <img src={nameE.img}></img>
                             </div>
                         ))}

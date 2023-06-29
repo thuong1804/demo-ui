@@ -1,7 +1,16 @@
+.admin {
+    font-family: 'Inter', sans-serif;
+}
+
 .side-bar {
     height: 96vh;
     background-color: white;
     border-radius: 15px;
+}
+
+.title-menu-link {
+    font-size: 0.8rem;
+    color: #757688;
 }
 
 .block-menu-side-bar {
@@ -9,17 +18,23 @@
 }
 
 .title-side-bar p {
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 .head-menu header h3 {
-    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.icon-text-flex {
+    display: flex;
+    align-items: center;
 }
 
 .menu-sidear-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .head-menu {
@@ -62,7 +77,7 @@
 .menu-sidebar {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .menu-sidebar a {
@@ -81,7 +96,8 @@
 
 .content-title>div:first-child {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding-bottom: 5px;
 }
 
 .content-title div:nth-child(2) {
@@ -91,7 +107,7 @@
 
 .menu-content-list {
     padding-right: 10px;
-    font-size: 10px;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
@@ -143,6 +159,7 @@
     border-radius: 5px;
     border: 1px solid grey;
     padding: 4px 4px 4px 4px;
+    font-weight: bold;
 }
 
 .content-table {
@@ -212,11 +229,11 @@
 
 .content-chart-title>div:first-child {
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .content-chart .img-chart img {
     width: 250px;
-    height: 150px;
 }
 
 .content-grid-info {
@@ -286,12 +303,12 @@
     font-size: 0.6rem;
     background-color: rgb(124 104 238);
     width: 25%;
-    height: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    padding: 10px;
 }
 
 .bground-menu-list div:nth-child(2) {
@@ -305,7 +322,7 @@
     background-color: rgb(238 234 255);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 15px;
+    padding: 15px 30px;
 }
 
 .info-title>div:nth-child(n+1) {
