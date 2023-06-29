@@ -221,7 +221,7 @@ function Sidebar() {
                                             <div className='list-book-element'>
                                                 <div className='name-book-item' >
                                                     <img src={data.img}></img>
-                                                    <div >
+                                                    <div>
                                                         {data.title}
                                                     </div>
                                                 </div>
